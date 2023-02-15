@@ -7,14 +7,16 @@ import { SideMenu } from "../SideMenu";
 export default function Navbar() {
     const [isOpen, setisOpen] = useState(false);
     return (
-        <nav className='h-20 bg-blue-500 px-container flex justify-between items-center'>
+        <nav
+            className='h-nav bg-blue-500 px-container flex justify-between items-center'
+        >
             <a href="#">
                 <h1 className="text-white text-5xl">WILBER</h1>
             </a>
-            <NavLinksRender links={linksData}/>
-            <ButtonMenu onOpen={setisOpen} isOpen={isOpen}/>
+            <NavLinksRender links={linksData} />
+            <ButtonMenu onOpen={setisOpen} isOpen={isOpen} />
 
-            <SideMenu/>
+            <SideMenu isOpen={isOpen} />
         </nav>
     )
 }
