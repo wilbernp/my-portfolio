@@ -5,8 +5,7 @@
 
 @layer components {
     .side-menu{
-        width: 50%;
-        height: calc(100vh - theme("height.nav"));
+        width: 60%;
         background-color: theme("colors.white");
         position: fixed;
         right: theme("spacing.container");
@@ -21,5 +20,9 @@
 
     .clip-path-full {
         clip-path: circle(140.9% at 100% 0);
+    }
+
+    .h-100vh {
+        height: calc(100vh - theme("height.nav"));
     }
 }

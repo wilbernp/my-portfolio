@@ -8,7 +8,7 @@ interface SideMenuProps {
 export default function SideMenu({isOpen}: SideMenuProps) {
   return (
     <aside 
-    className={`md:hidden side-menu ${isOpen &&"clip-path-full"}`}
+    className={`md:hidden side-menu h-100vh ${isOpen &&"clip-path-full"}`}
     >
       <MenuLinksRender links={linksData}/>
     </aside>
