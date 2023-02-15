@@ -6,10 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      padding: {
-        'container': '2.5rem',
+      spacing: {
+        container: "2.5rem",
+        nav:"5rem"
       },
-      
     }
   },
   plugins: [],
