@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .side-menu{
+        width: 50%;
+        height: calc(100vh - theme("height.nav"));
+        background-color: theme("colors.white");
+        position: absolute;
+        right: theme("spacing.container");
+        top: theme("spacing.nav");
+        clip-path: circle(0 at 100% 0);
+        transition: clip-path .7s ease-in-out;
+        z-index: 999;
+    }
+}
+
+@layer utilities {
+
+    .clip-path-full {
+        clip-path: circle(140.9% at 100% 0);
+    }
+}
