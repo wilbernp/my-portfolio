@@ -2,6 +2,7 @@ import { useState } from "react";
 import { linksData } from "@/data/links.data";
 import ButtonMenu from "./ButtonMenu";
 import NavLinksRender from "./NavLinksRender";
+import { SideMenu } from "../SideMenu";
 
 export default function Navbar() {
     const [isOpen, setisOpen] = useState(false);
@@ -13,7 +14,7 @@ export default function Navbar() {
             <NavLinksRender links={linksData}/>
             <ButtonMenu onOpen={setisOpen} isOpen={isOpen}/>
 
-
+            <SideMenu/>
         </nav>
     )
 }

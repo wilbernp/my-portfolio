@@ -1,5 +1,4 @@
 import { ILink } from '@/types/links';
-import React from 'react';
 
 interface NavLinksRenderProps {
     links: ILink[]
