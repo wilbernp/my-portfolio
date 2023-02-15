@@ -8,7 +8,7 @@
         width: 50%;
         height: calc(100vh - theme("height.nav"));
         background-color: theme("colors.white");
-        position: absolute;
+        position: fixed;
         right: theme("spacing.container");
         top: theme("spacing.nav");
         clip-path: circle(0 at 100% 0);
