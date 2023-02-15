@@ -14,9 +14,8 @@ export default function Navbar() {
                 </a>
                 <NavLinksRender links={linksData} />
                 <ButtonMenu onOpen={setisOpen} isOpen={isOpen} />
-
             </div>
-            <div className="h-nav"></div>
+            <div className="h-nav"/>
             <SideMenu isOpen={isOpen} />
         </nav>
     )

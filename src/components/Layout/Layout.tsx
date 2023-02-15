@@ -9,7 +9,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar />
-      <main className="bg-slate-800 min-h-screen">
+      <main className="bg-slate-800 min-h-screen px-container">
         {children}
       </main>
     </>
