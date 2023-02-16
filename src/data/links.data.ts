@@ -1,4 +1,4 @@
-import { ILink } from "@/types/links";
+import { ILink } from "@/types/link";
 
 export const linksData:ILink[] = [
     {

@@ -1,4 +1,4 @@
-import { ILink } from '@/types/links';
+import { ILink } from '@/types/link';
 
 interface MenuLinksRenderProps {
     links: ILink[]

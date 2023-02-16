@@ -2,6 +2,7 @@
 import About from './components/About/About'
 import { Banner } from './components/Banner'
 import { Layout } from './components/Layout'
+import Projects from './Projects/Projects'
 import Skills from './Skills/Skills'
 
 
@@ -13,6 +14,7 @@ export default function App() {
       <Banner/>
       <About/>
       <Skills/>
+      <Projects/>
     </Layout>
   )
 }
