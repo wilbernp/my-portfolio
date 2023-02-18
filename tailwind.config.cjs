@@ -12,7 +12,9 @@ module.exports = {
         container: "2.5rem",
         nav:"5rem"
       },
-      
+      colors:{
+        "dark-gradient":"linear-gradient(to right, #243B55, #141E30)"
+      }
     }
   }
 }

@@ -2,6 +2,7 @@ interface InputProps {
     type?: React.HTMLInputTypeAttribute;
     placeholder: string;
     id: string;
+
 }
 export default function Input({ type, placeholder, id }: InputProps) {
    
@@ -11,7 +12,6 @@ export default function Input({ type, placeholder, id }: InputProps) {
                 type={type}
                 id={id}
                 placeholder=" "
-                autoComplete="off"
                 className='peer h-12 w-full px-4 outline-none bg-slate-800 border-2 border-white text-white focus:border-blue-400'
             />
             <label

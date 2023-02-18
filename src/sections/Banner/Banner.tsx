@@ -1,3 +1,4 @@
+import Button from '@/components/Button/Button'
 import React from 'react'
 
 export default function Banner() {
@@ -11,7 +12,7 @@ export default function Banner() {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex illo fugit commodi distinctio, vero soluta nam quod pariatur minus ducimus nihil aliquid possimus iusto architecto vitae suscipit.
         </p>
       </article>
-      <button className="w-40 py-2 border-4 rounded-3xl border-blue-400 text-blue-400 text-dark-gradient">Contacto</button>
+      <Button title='Contacto'/>
     </section>
   )
 }
