@@ -3,8 +3,14 @@
 @tailwind utilities;
 
 
+@layer base {
+    body {
+        @apply bg-slate-800 px-container pb-container
+    }
+}
+
 @layer components {
-    .side-menu{
+    .side-menu {
         width: 60%;
         background-color: theme("colors.white");
         position: fixed;
@@ -14,6 +20,7 @@
         transition: clip-path .7s ease-in-out;
         z-index: 999;
     }
+
 }
 
 @layer utilities {
