@@ -1,9 +1,9 @@
-
-import About from './components/About/About'
-import { Banner } from './components/Banner'
-import { Layout } from './components/Layout'
+import About from './sections/About/About'
+import { Banner } from './sections/Banner'
+import { Layout } from './sections/Layout'
 import Projects from './Projects/Projects'
 import Skills from './Skills/Skills'
+import { Contact } from './sections/Contact'
 
 
 
@@ -15,6 +15,7 @@ export default function App() {
       <About/>
       <Skills/>
       <Projects/>
+      <Contact/>
     </Layout>
   )
 }
