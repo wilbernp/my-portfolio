@@ -2,7 +2,7 @@ import { useState } from "react";
 import { linksData } from "@/data/links.data";
 import ButtonMenu from "./ButtonMenu";
 import NavLinksRender from "./NavLinksRender";
-import { SideMenu } from "../SideMenu";
+import { SideMenu } from "@/components/SideMenu";
 
 export default function Navbar() {
     const [isOpen, setisOpen] = useState(false);
