@@ -13,7 +13,7 @@ export default function SideMenu({ isOpen }: SideMenuProps) {
       >
         <MenuLinksRender links={linksData} />
       </div>
-      <div className={`fixed z-30 h-screen w-full top-0 left-0 transition-all duration-500 ease-in-out md:hidden ${isOpen?"bg-black/50 backdrop-blur-sm":"backdrop-blur-0"}`}></div>
+      <div className={`fixed z-30 h-screen w-full top-0 left-0 transition-[backdrop-filter] duration-500 ease-in-out md:hidden ${isOpen?"bg-black/50 backdrop-blur-sm":"backdrop-blur-0"}`}></div>
     </div>
   );
 }
