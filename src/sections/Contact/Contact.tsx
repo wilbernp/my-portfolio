@@ -1,4 +1,4 @@
-import Button from "@/components/Button/Button";
+
 import { Input } from "@/components/Input";
 import SocialLink from "@/components/SocialLink/SocialLink";
 import { TextArea } from "@/components/TextArea";
@@ -6,34 +6,35 @@ import { contactLinksData } from "@/data/social-links.data";
 
 export default function Contact() {
     return (
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-col items-center mt-24 ">
+            {/* titulo */}
+            <h2 className='text-center text-blue-500 text-3xl font-bold mb-6 sm:text-4xl' >Contacto</h2>
+            {/* formulario */}
             <form className="w-[70%]">
-                <h2>Contacto</h2>
+                {/* nombre */}
                 <Input
-                    id='name'
-                    placeholder='Nombre'
+                    placeholder="Nombre"
                     type="text"
                 />
+                {/* email */}
                 <Input
-                    id='email'
+                    placeholder="E-mail"
                     type="email"
-                    placeholder='E-mail'
                 />
+                {/* mensaje */}
                 <TextArea
-                    id='message'
-                    placeholder='Mensaje'
                     rows={5}
+                    placeholder="Mensaje"
                 />
-                <div className="flex justify-end">
-                    <Button secondary title="Enviar" />
-                </div>
 
             </form>
+            {/* links sociales icono + etiqueta */}
             <div className="w-80">
                 <div>
                     <SocialLink href="#" label="Lorem, ipsum dolor." />
                     <SocialLink href="#" label="Lorem, ipsum dolor." />
                 </div>
+                {/* links sociales icono */}
                 <div className="flex gap-8">
                     {
                         contactLinksData.map((link, index) => {
