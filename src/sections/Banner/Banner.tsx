@@ -1,12 +1,30 @@
 import Button from '@/components/Button/Button'
+import SocialLink from '@/components/SocialLink/SocialLink'
+import { bannerLinksData } from '@/data/social-links.data'
 import React from 'react'
 
 export default function Banner() {
   return (
     <section className='flex gap-3 flex-col  items-center h-100vh text-center mt-3 sm:mt-4 sm:text-start sm:flex-row  sm:items-start sm:gap-12 md:gap-16 lg:mt-10'>
-      {/* avatar image */}
-      <div className='flex justify-end sm:w-[50%]'>
-        <div className='w-40 h-40 bg-slate-300 rounded-full border-[6px] border-blue-400 sm:w-64 sm:h-64 lg:w-72 lg:h-72'></div>
+      <div className='sm:w-[50%]'>
+        {/* imagen del perfil */}
+        <div className='flex justify-end '>
+          <div className='w-40 h-40 bg-slate-300 rounded-full border-[6px] border-blue-400 sm:w-64 sm:h-64 lg:w-72 lg:h-72'></div>
+        </div>
+
+        {/* links sociales */}
+        <div className='hidden sm:flex gap-5 mt-5 lg:-mt-2 lg:ml-11'>
+          {
+            bannerLinksData.map((link, index) => {
+              return (
+                  <SocialLink 
+                  key={index} 
+                  href={link.href}
+                  />
+              )
+            })
+          }
+        </div>
       </div>
 
       {/* article */}
@@ -29,7 +47,7 @@ export default function Banner() {
           <div className='w-40 hidden sm:block'>
             <Button title='Descargar CV' secondary />
           </div>
-          
+
         </div>
       </article>
     </section>
