@@ -9,22 +9,10 @@
     }
 }
 
-@layer components {
-    .side-menu {
-        width: 60%;
-        background-color: theme("colors.white");
-        position: fixed;
-        right: theme("spacing.container");
-        top: theme("spacing.nav");
-        clip-path: circle(0 at 100% 0);
-        transition: clip-path .7s ease-in-out;
-        z-index: 999;
-    }
-
-}
-
 @layer utilities {
-
+    .clip-path-0 {
+        clip-path: circle(0 at 100% 0);
+    }
     .clip-path-full {
         clip-path: circle(140.9% at 100% 0);
     }
