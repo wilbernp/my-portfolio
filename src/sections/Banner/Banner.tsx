@@ -13,7 +13,7 @@ export default function Banner() {
         </div>
 
         {/* links sociales */}
-        <div className='hidden sm:flex gap-5 mt-5 lg:-mt-2 lg:ml-11'>
+        <div className='hidden sm:flex gap-5 mt-5 lg:ml-11'>
           {
             bannerLinksData.map((link, index) => {
               return (

@@ -5,7 +5,7 @@ interface InputProps {
 export default function Input({ type, placeholder }: InputProps) {
 
     return (
-        <div className='relative my-8'>
+        <div className='relative mb-8'>
             {/* input */}
             <input
                 type="text"
