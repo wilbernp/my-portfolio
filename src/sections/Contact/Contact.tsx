@@ -13,7 +13,7 @@ export default function Contact() {
             {/* container */}
             <div className="flex flex-col items-center gap-x-9 relative lg:flex-row lg:items-start lg:justify-between">
                 {/* formulario */}
-                <form className="w-[70%] max-w-md lg:w-[40%]">
+                <form className="w-full md:w-[70%] max-w-md lg:w-[40%]">
 
                     {/* nombre */}
                     <Input
@@ -37,7 +37,7 @@ export default function Contact() {
                     </div>
                 </form>
                 {/* links sociales icono + etiqueta */}
-                <div className="w-[70%] max-w-md lg:w-60 flex flex-col gap-8 lg:gap-14 mt-14">
+                <div className="w-full md:w-[70%] max-w-md lg:w-60 flex flex-col gap-8 lg:gap-14 mt-14">
                     <div className="flex flex-col gap-8">
                         <SocialLink href="#" label="Lorem, ipsum dolor." />
                         <SocialLink href="#" label="Lorem, ipsum dolor." />
