@@ -38,10 +38,13 @@ export default function Contact() {
                     {
                         contactLinksData.map((link, index) => {
                             return (
-                                <SocialLink
-                                    key={index}
-                                    href={link.href}
-                                />
+                                <div className='w-11 h-11 '>
+
+                                    <SocialLink
+                                        key={index}
+                                        href={link.href}
+                                    />
+                                </div>
                             )
                         })
                     }
