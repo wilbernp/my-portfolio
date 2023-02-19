@@ -33,7 +33,7 @@ export default function Banner() {
         <h1 className='text-white text-2xl font-bold sm:text-3xl md:text-4xl lg:mb-3'>WILBER NARVAEZ</h1>
         {/* perfil */}
         <h3 className='text-blue-500 text-xl lg:mb-5'>Lorem, ipsum.</h3>
-        {/* paragraph */}
+        {/* parrafo */}
         <p className='text-white text-sm sm:text-base mb-4 sm:text-start lg:leading-6 lg:mb-8'>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex illo fugit commodi distinctio, vero soluta nam quod pariatur minus ducimus nihil aliquid possimus iusto architecto vitae suscipit.
         </p>
