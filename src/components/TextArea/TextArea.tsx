@@ -17,7 +17,7 @@ export default function TextArea({rows, placeholder}: TextAreaProps) {
             ></textarea>
             {/* label */}
             <label
-                className="absolute left-2 -top-3 text-gray-200 text-sm bg-slate-800 px-1 transition-all duration-100 pointer-events-none peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:left-2 peer-focus:-top-3 peer-focus:text-sm peer-focus:text-blue-400"
+                 className='absolute left-2 top-0 -translate-y-1/2 text-gray-200 text-sm bg-slate-800 px-1 transition-all ease-in-out duration-150 pointer-events-none peer-focus:-translate-y-1/2 peer-focus:top-0 peer-focus:text-sm peer-placeholder-shown:top-6 peer-placeholder-shown:text-base'
             >{placeholder}</label>
         </div>
     )
