@@ -3,16 +3,35 @@ import React from 'react'
 
 export default function Banner() {
   return (
-    <section className='flex flex-col justify-around text-center items-center h-100vh'>
-      <div className='w-40 h-40 bg-slate-300 rounded-full border-[6px] border-blue-400'></div>
-      <article className='flex flex-col'>
-        <h1 className='text-white text-3xl font-bold mb-3'>WILBER NARVAEZ</h1>
-        <h3 className='text-blue-500 text-xl'>Lorem, ipsum.</h3>
-        <p className='text-white text-sm'>
+    <section className='flex gap-3 flex-col  items-center h-100vh text-center mt-3 sm:mt-4 sm:text-start sm:flex-row  sm:items-start sm:gap-12 md:gap-16 lg:mt-10'>
+      {/* avatar image */}
+      <div className='flex justify-end sm:w-[50%]'>
+        <div className='w-40 h-40 bg-slate-300 rounded-full border-[6px] border-blue-400 sm:w-64 sm:h-64 lg:w-72 lg:h-72'></div>
+      </div>
+
+      {/* article */}
+      <article className='flex flex-col sm:w-[40%]'>
+        {/* nombre */}
+        <h1 className='text-white text-2xl font-bold sm:text-3xl md:text-4xl lg:mb-3'>WILBER NARVAEZ</h1>
+        {/* perfil */}
+        <h3 className='text-blue-500 text-xl lg:mb-5'>Lorem, ipsum.</h3>
+        {/* paragraph */}
+        <p className='text-white text-sm sm:text-base mb-4 sm:text-start lg:leading-6 lg:mb-8'>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex illo fugit commodi distinctio, vero soluta nam quod pariatur minus ducimus nihil aliquid possimus iusto architecto vitae suscipit.
         </p>
+        {/* botones */}
+        <div className='flex flex-wrap gap-4 justify-center sm:justify-start lg:gap-10'>
+          {/* boton contacto */}
+          <div className='w-48 sm:w-40'>
+            <Button title='Contacto' />
+          </div>
+          {/* boton descargar CV */}
+          <div className='w-40 hidden sm:block'>
+            <Button title='Descargar CV' secondary />
+          </div>
+          
+        </div>
       </article>
-      <Button title='Contacto'/>
     </section>
   )
 }
