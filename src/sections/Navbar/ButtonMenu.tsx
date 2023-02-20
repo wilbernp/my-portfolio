@@ -10,7 +10,7 @@ export default function ButtonMenu({onOpen, isOpen}:ButtonMenuProps) {
         onOpen(!isOpen)
     }
     return (
-        <div
+        <button
         onClick={handleOpen}
             className="md:hidden cursor-pointer bg-white h-9 w-10"
         />

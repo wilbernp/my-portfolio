@@ -12,6 +12,10 @@ export default function useOutsideClick<T extends HTMLElement>(callbackOutside:(
     
     useEffect(() => {
         function handleMouseDown(event:MouseEvent){
+          // cuando el click sea sobre un boton no se hace nada
+          if (event.target instanceof HTMLButtonElement) {
+            return
+          }
           // se valida que el elemento en el que se hizo
           // click no sea hijo del elemento referenciado
             if (ref.current && !ref.current.contains(event.target as Node)) {
