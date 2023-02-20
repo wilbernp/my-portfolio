@@ -8,7 +8,7 @@ export default function Banner() {
       <div className='sm:w-[50%]'>
         {/* imagen del perfil */}
         <div className='flex justify-end'>
-          <div className='w-40 h-40 bg-slate-300 rounded-full border-[6px] border-blue-400 sm:w-64 sm:h-64 lg:w-72 lg:h-72'></div>
+          <div className='w-40 h-40 bg-slate-300 rounded-full border-[6px] border-blue-400 sm:border-none sm:w-64 sm:h-64 lg:w-72 lg:h-72'></div>
         </div>
         {/* links sociales */}
         <div className='hidden sm:flex gap-5 mt-5 lg:ml-11'>
