@@ -16,7 +16,7 @@ export default function Navbar() {
                 <ButtonMenu onOpen={setisOpen} isOpen={isOpen} />
             </div>
             <div className="h-nav"/>
-            <SideMenu isOpen={isOpen} />
+            <SideMenu onOpen={setisOpen} isOpen={isOpen} />
         </nav>
     )
 }
