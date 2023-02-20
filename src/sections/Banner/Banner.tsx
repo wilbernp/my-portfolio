@@ -4,11 +4,12 @@ import { bannerLinksData } from '@/data/social-links.data'
 
 export default function Banner() {
   return (
-    <section className='flex gap-3 flex-col  items-center h-100vh text-center mt-3 sm:mt-4 sm:text-start sm:flex-row  sm:gap-12 md:gap-16 lg:gap-32'>
+    <section className='flex gap-3 flex-col  items-center h-100vh text-center mt-3 sm:mt-4 sm:text-start sm:flex-row  sm:gap-12 md:gap-16 lg:gap-44'>
       <div className='sm:w-[50%]'>
-        {/* imagen del perfil */}
+        {/* contenedor de la imagen */}
         <div className='flex justify-end'>
-          <div className='w-40 h-40 bg-slate-300 rounded-full border-[6px] border-blue-400 sm:border-none sm:w-64 sm:h-64 lg:w-72 lg:h-72'></div>
+        {/* imagen del perfil */}
+           <img className='w-40 h-40 object-cover rounded-full border-[6px] border-blue-400 sm:border-none sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80' src="/perfil.png" alt="" />
         </div>
         {/* links sociales */}
         <div className='hidden sm:flex gap-5 mt-5 lg:ml-11'>
