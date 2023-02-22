@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import hamburgerMenu from '@iconify/icons-mdi/hamburger-menu';
+import { InlineIcon } from '@iconify/react';
 
 interface ButtonMenuProps {
     onOpen: (isOpen: boolean) => void;
@@ -7,12 +8,14 @@ interface ButtonMenuProps {
 
 export default function ButtonMenu({onOpen, isOpen}:ButtonMenuProps) {
     function handleOpen(){
-        onOpen(!isOpen)
+       onOpen(!isOpen)
     }
     return (
         <button
         onClick={handleOpen}
-            className="md:hidden cursor-pointer bg-white h-9 w-10"
-        />
+            className="md:hidden cursor-pointer"
+        >
+            <InlineIcon id='hello' role="button" className='text-6xl text-white' icon={hamburgerMenu}/>
+        </button>
     );
 }
