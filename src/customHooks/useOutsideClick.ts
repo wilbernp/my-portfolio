@@ -1,24 +1,24 @@
 import { useEffect, useRef } from "react";
 
-
 /**
  * Detecta evento de click en cualquier parte del documento HTML
  * @param {funtion} callbackOutside se invoca cada que se hace click fuera del elemento referenciado
- * @param {boolean} alwaysActiveEvent mientras sea true estara activo el evento para detectar clicks
+ * @param {boolean} isActiveEvent mientras sea true estara activo el evento para detectar clicks
  * @returns {React.RefObject} React.RefObject
  */
-export default function useOutsideClick<T extends HTMLElement>(callbackOutside:() => void, alwaysActiveEvent?:boolean):React.RefObject<T>|null{
+export default function useOutsideClick<T extends HTMLElement>(callbackOutside:() => void, isActiveEvent?:boolean):React.RefObject<T>|null{
     const ref = useRef<T>(null)
     
     useEffect(() => {
         function handleMouseDown(event:MouseEvent){
           // cuando el click sea sobre un boton no se hace nada
-          if (event.target instanceof HTMLButtonElement) {
-            return
-          }
+          const eventtarget = event.target as Node
+          console.log("eventTarget ", eventtarget)
+        
           // se valida que el elemento en el que se hizo
           // click no sea hijo del elemento referenciado
             if (ref.current && !ref.current.contains(event.target as Node)) {
+              
                 callbackOutside()
             }
         }
@@ -26,13 +26,13 @@ export default function useOutsideClick<T extends HTMLElement>(callbackOutside:(
         // pantalla
         document.addEventListener("mousedown", handleMouseDown)
 
-        if (!alwaysActiveEvent) {
+        if (!isActiveEvent) {
           document.removeEventListener("mousedown", handleMouseDown)
         }
       return () => {
         document.removeEventListener("mousedown", handleMouseDown)
       };
-    }, [alwaysActiveEvent]);
+    }, [isActiveEvent]);
 
     return ref
 
