@@ -1,6 +1,6 @@
 import useOutsideClick from "@/customHooks/useOutsideClick";
 import { linksData } from "@/data/links.data";
-import MenuLinksRender from "./MenuLinksRender";
+import MenuLinksRender from "../../components/SideMenu/MenuLinksRender";
 
 interface SideMenuProps {
   isOpen: boolean;
@@ -10,6 +10,7 @@ interface SideMenuProps {
 export default function SideMenu({ isOpen, onOpen }: SideMenuProps) {
   const divRef = useOutsideClick<HTMLDivElement>(() => {
     onOpen(false)
+    console.log("open callback")
   }, isOpen)
   return (
     <div>
