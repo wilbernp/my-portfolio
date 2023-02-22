@@ -11,7 +11,7 @@ export default function Contact() {
     return (
         <div className="mt-24">
             {/* titulo */}
-            <h2 className='text-center text-blue-500 text-3xl font-bold mb-6 sm:text-4xl' >Contacto</h2>
+            <h2 className='text-center text-blue-500 text-3xl font-bold mb-6 sm:text-4xl' >CONTACTO</h2>
             {/* container */}
             <div className="flex flex-col items-center gap-x-9 relative lg:flex-row lg:items-start lg:justify-between">
                 {/* formulario */}
