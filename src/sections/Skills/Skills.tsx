@@ -1,7 +1,8 @@
-
-import { softSkillsData } from '@/data/soft-skills.data'
+import { frontendData } from '@/data/skills/fronted.data';
+import { backendData } from '@/data/skills/backend.data';
+import { softSkillsData } from "@/data/skills/soft-skills.data";
+import { toolsData } from "@/data/skills/tools.data";
 import CardSkill from "./CardSkill";
-import { backendData, frontendData, toolsData } from "@/data/technologies.data";
 import ContainerSkill from "./ContainerSkill";
 
 export default function Skills() {

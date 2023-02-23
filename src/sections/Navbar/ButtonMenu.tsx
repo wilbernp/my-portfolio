@@ -12,7 +12,7 @@ export default function ButtonMenu({ onOpen, isOpen }: ButtonMenuProps) {
     }
     if (isOpen) {
         return (
-            <InlineIcon id='hello' role="button" className=' md:hidden cursor-pointer text-6xl text-blue-300' icon={hamburgerMenu} />
+            <InlineIcon id='hello' role="button" className='cursor-pointer text-white text-6xl md:hidden' icon={hamburgerMenu} />
         )
     }
 
