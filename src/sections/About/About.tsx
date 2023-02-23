@@ -1,4 +1,5 @@
-
+import Lottie from "lottie-react";
+import coddinAnimation from "@/assets/lotties/codding-1.json"
 export default function About() {
     return (
         <section>
@@ -11,7 +12,11 @@ export default function About() {
             {/* contenedor */}
             <div className="flex flex-col gap-36 lg:flex-row-reverse">
                 {/* ilustracion */}
-                <div className='w-[60%] h-[50vh] bg-slate-400 mx-auto'></div>
+                <div className='w-[80%] max-w-md mx-auto'>
+                    <Lottie
+                     animationData={coddinAnimation} loop={true} 
+                     />
+                </div>
                 {/* articulo */}
                 <article className="text-sm sm:text-base">
                     {/* titulo */}

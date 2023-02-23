@@ -1,6 +1,6 @@
 import { ISkill } from "@/types/skill";
 
-export const technologiesData:ISkill[] = [
+export const frontendData:ISkill[] = [
     {
         label:"HTML5"
     },
@@ -28,6 +28,12 @@ export const technologiesData:ISkill[] = [
     {
         label:"Nextjs"
     },
+]
+
+export const backendData:ISkill[] = [
+    {
+        label:"Nodejs"
+    },
     {
         label:"Express"
     },
@@ -38,6 +44,40 @@ export const technologiesData:ISkill[] = [
         label:"PostgreSQL"
     },
     {
+        label:"Sequelize"
+    },
+    {
         label:"MongoDB"
-    }
+    },
+    {
+        label:"Mongoose"
+    },
+    {
+        label:"JWT"
+    },
+    {
+        label:"Passport"
+    },
+    {
+        label:"Swagger"
+    },
+]
+
+export const toolsData:ISkill[] = [
+    {
+        label:"Git"
+    },
+    {
+        label:"GitHub"
+    },
+    {
+        label:"Linux"
+    },
+    {
+        label:"VS Code"
+    },
+    {
+        label:"Vercel"
+    },
+    
 ]
