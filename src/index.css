@@ -5,7 +5,7 @@
 
 @layer base {
     body {
-        @apply bg-slate-800 px-container pb-container
+        @apply bg-[#072146] px-container pb-container
     }
 }
 
@@ -20,4 +20,5 @@
     .h-100vh {
         height: calc(100vh - theme("height.nav"));
     }
+    
 }
