@@ -20,5 +20,4 @@
     .h-100vh {
         height: calc(100vh - theme("height.nav"));
     }
-    
 }

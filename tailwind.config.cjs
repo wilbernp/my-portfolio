@@ -19,9 +19,10 @@ module.exports = {
       fontSize:{
         "xs":["0.95rem",{lineHeight:"1rem"}]
       },
-      colors:{
-        "dark-gradient":"linear-gradient(to right, #243B55, #141E30)"
+      backgroundImage: {
+        'contact-image': "url('./src/assets/contactImage.svg')",
       }
+
     }
   }
 }

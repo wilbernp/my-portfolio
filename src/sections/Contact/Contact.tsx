@@ -9,11 +9,11 @@ import { InlineIcon } from "@iconify/react";
 
 export default function Contact() {
     return (
-        <div className="mt-24">
+        <div className="mt-24 lg:bg-contact-image bg-no-repeat bg-right-bottom bg-[length:250px_500px]">
             {/* titulo */}
-            <h2 className='text-center text-blue-500 text-3xl font-bold mb-6 sm:text-4xl' >CONTACTO</h2>
+            <h2 className='text-center text-blue-500 text-3xl font-bold mb-14 sm:text-4xl' >CONTACTO</h2>
             {/* container */}
-            <div className="flex flex-col items-center gap-x-9 relative lg:flex-row lg:items-start lg:justify-between">
+            <div className="flex flex-col items-center gap-x-32 relative lg:flex-row lg:items-start ">
                 {/* formulario */}
                 <form className="w-full md:w-[70%] max-w-md lg:w-[40%]">
 
@@ -39,7 +39,7 @@ export default function Contact() {
                     </div>
                 </form>
                {/* links sociales */}
-                <div className="w-full md:w-[70%] max-w-md lg:w-60 flex flex-col gap-8 lg:gap-14 mt-14">
+                <div className="w-full md:w-[70%] max-w-md lg:w-60 flex flex-col gap-8 lg:gap-14">
                      {/* links sociales icono + etiqueta */}
                     <div className="flex flex-col gap-8">
                         {/* gmail link */}
@@ -72,11 +72,7 @@ export default function Contact() {
                         }
                     </div >
                 </div>
-                {/* contenedor ilustracion */}
-                <div className="hidden w-[20%] h-[50vh] lg:block">
-                    {/* ilustracion */}
-                    <div className='bg-slate-400 absolute bottom-0 right-0 w-[20%] h-1/2'></div>
-                </div>
+                
             </div>
         </div>
     )
