@@ -8,7 +8,7 @@ interface Props {
 function ContainerSkill({ children, title }: Props) {
     return (
         <div className="flex flex-wrap justify-center my-10">
-            <div className="bg-slate-500 py-3 px-5">
+            <div className="bg-slate-600 rounded-lg py-3 px-5">
                 {/* titulo de la tarjeta */}
                 <h2 className="text-center text-white text-xl font-medium mb-4">{title}</h2>
                 {/* contenedor tarjeta de habilidad */}
