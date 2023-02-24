@@ -1,6 +1,6 @@
 import useOutsideClick from "@/customHooks/useOutsideClick";
 import { linksData } from "@/data/links.data";
-import MenuLinksRender from "../../components/SideMenu/MenuLinksRender";
+import MenuLinksRender from "./MenuLinksRender";
 
 interface SideMenuProps {
   isOpen: boolean;

@@ -1,7 +1,8 @@
-import Button from '@/components/Button/Button'
+
 import { bannerLinksData } from '@/data/social-links.data'
 import { InlineIcon } from '@iconify/react';
 import imgProfile from "@/assets/perfil.png"
+import { Button } from '@/components/Button';
 
 export default function Banner() {
   return (

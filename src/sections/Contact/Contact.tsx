@@ -1,4 +1,5 @@
-import Button from "@/components/Button/Button";
+
+import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
 import SocialLink from "@/components/SocialLink/SocialLink";
 import { TextArea } from "@/components/TextArea";
