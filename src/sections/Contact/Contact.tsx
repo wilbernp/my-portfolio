@@ -44,7 +44,7 @@ export default function Contact() {
                     <div className="flex flex-col gap-8">
                         {/* gmail link */}
                         <a className='flex items-center gap-6 w-max' href="#">
-                            <div className="bg-slate-400 flex items-center rounded-full w-11 h-11">
+                            <div className="bg-blue-400 flex items-center rounded-full w-11 h-11">
                             <InlineIcon icon={gmailIcon} className='text-slate-800 m-auto text-2xl left-2' />
                             </div>
                             <span className="text-white">Lorem, ipsum dolor.</span>
@@ -52,7 +52,7 @@ export default function Contact() {
 
                         {/* phone link */}
                         <a className='flex items-center gap-6 w-max' href="#">
-                            <div className="bg-slate-400 flex items-center rounded-full w-11 h-11">
+                            <div className="bg-blue-400 flex items-center rounded-full w-11 h-11">
                             <InlineIcon icon={phoneInTalk} className='text-slate-800 m-auto text-2xl left-2' />
                             </div>
                             <span className="text-white">Lorem, ipsum dolor.</span>
