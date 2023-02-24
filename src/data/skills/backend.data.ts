@@ -6,7 +6,7 @@ import fileTypeNestjs from '@iconify/icons-vscode-icons/file-type-nestjs';
 import postgresqlIcon from '@iconify/icons-logos/postgresql';
 import sequelizeIcon from '@iconify/icons-logos/sequelize';
 import mongodbIcon from '@iconify/icons-logos/mongodb-icon';
-import mongooseIcon from "@/assets/logos/mongoose.svg"
+import mongooseIcon from "@/assets/icons/mongoose.svg"
 import jwtIcon from '@iconify/icons-logos/jwt-icon';
 import passportIcon from '@iconify/icons-logos/passport';
 import swaggerIcon from '@iconify/icons-logos/swagger';
@@ -41,11 +41,6 @@ export const backendData:ISkill[] = [
         label:"MongoDB",
         href:"#",
         icon:mongodbIcon
-    },
-    {
-        label:"Mongoose",
-        href:"#",
-        icon:fileTypeHtml
     },
     {
         label:"JWT",

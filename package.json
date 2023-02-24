@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "@iconify/icons-bxl": "^1.2.6",
+    "@iconify/icons-flat-color-icons": "^1.2.5",
+    "@iconify/icons-fluent": "^1.2.18",
     "@iconify/icons-ic": "^1.2.13",
     "@iconify/icons-logos": "^1.2.23",
     "@iconify/icons-material-symbols": "^1.2.30",

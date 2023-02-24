@@ -1,3 +1,4 @@
+export type IconType = IconifyIcon | string
 export interface ISkill {
     label:string;
     icon:IconifyIcon;
