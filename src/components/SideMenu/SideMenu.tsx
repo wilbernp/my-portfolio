@@ -1,6 +1,6 @@
 import useOutsideClick from "@/customHooks/useOutsideClick";
 import { linksData } from "@/data/links.data";
-import MenuLinksRender from "../../components/SideMenu/MenuLinksRender";
+import MenuLinksRender from "./MenuLinksRender";
 
 interface SideMenuProps {
   isOpen: boolean;
@@ -12,11 +12,12 @@ export default function SideMenu({ isOpen, onOpen }: SideMenuProps) {
     onOpen(false)
     console.log("open callback")
   }, isOpen)
+
   return (
     <div>
       <div
         ref={divRef}
-        className={`md:hidden clip-path-0 w-[60%] bg-white fixed z-50 top-nav right-0 h-100vh transition-[clip-path] duration-700 ease-in-out ${isOpen && "clip-path-full"}`}
+        className={`md:hidden clip-path-0 w-[60%] bg-[#153b6d] shadow- shadow-black fixed z-50 top-nav right-0 h-100vh transition-[clip-path] duration-700 ease-in-out ${isOpen && "clip-path-full"}`}
       >
         <MenuLinksRender links={linksData} />
       </div>
