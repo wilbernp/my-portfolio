@@ -13,7 +13,7 @@ export default function TextArea({rows, placeholder}: TextAreaProps) {
             autoComplete='off'
                 placeholder=" "
                 rows={rows}
-                className="peer w-full p-4 outline-none rounded-md bg-[#072146] border-2 border-white text-white focus:border-blue-400"
+                className="peer w-full p-4 outline-none rounded-md bg-[#072146] border-2 border-[#d5e1f1] text-[#d5e1f1] focus:border-[#3581eb]"
             ></textarea>
             {/* label */}
             <label

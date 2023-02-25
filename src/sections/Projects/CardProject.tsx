@@ -8,7 +8,7 @@ import livePreview from '@iconify/icons-pajamas/live-preview';
 export default function CardProject(props: IProject) {
     return (
         <div
-            className='group/card overflow-hidden text-white bg-[#0d3263] w-80 py-7 text-center rounded-lg'
+            className='group/card overflow-hidden text-[#d5e1f1] bg-[#0d3263] w-80 py-7 text-center rounded-lg'
         >
             {/* titulo del proyecto */}
             <h2 className='text-2xl font-semibold'>{props.title}</h2>

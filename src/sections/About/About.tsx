@@ -22,9 +22,9 @@ export default function About() {
                     {/* titulo */}
                     <h2 className='text-center text-blue-500 text-3xl font-bold sm:text-4xl'>QUIEN SOY</h2>
                     {/* parrafo 1 */}
-                    <p className='text-white my-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit cupiditate aperiam quibusdam necessitatibus.</p>
+                    <p className='text-[#d5e1f1] my-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit cupiditate aperiam quibusdam necessitatibus.</p>
                     {/* parrafo 2 */}
-                    <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt ut alias rerum ipsa fugiat ratione, nobis eius temporibus distinctio perspiciatis officia, sed fuga quae in placeat nemo corrupti consectetur.</p>
+                    <p className='text-[#d5e1f1]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt ut alias rerum ipsa fugiat ratione, nobis eius temporibus distinctio perspiciatis officia, sed fuga quae in placeat nemo corrupti consectetur.</p>
                 </article>
             </div>
         </section>

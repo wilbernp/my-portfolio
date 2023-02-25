@@ -11,7 +11,7 @@ export default function Input({ type, placeholder }: InputProps) {
                 type="text"
                 placeholder=" "
                 autoComplete="off"
-                className='peer h-12 w-full px-4 outline-none rounded-md bg-[#072146] border-2 border-white text-white focus:border-blue-400'
+                className='peer h-12 w-full px-4 outline-none rounded-md bg-[#072146] border-2 border-[#d5e1f1] text-[#d5e1f1] focus:border-[#3581eb] '
             />
             {/* label */}
             <label
