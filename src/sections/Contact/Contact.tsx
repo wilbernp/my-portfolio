@@ -7,6 +7,7 @@ import { contactLinksData } from "@/data/social-links.data";
 import gmailIcon from '@iconify/icons-bxl/gmail';
 import phoneInTalk from '@iconify/icons-material-symbols/phone-in-talk';
 import { InlineIcon } from "@iconify/react";
+import ContactForm from "./ContactForm";
 
 export default function Contact() {
     return (
@@ -16,29 +17,7 @@ export default function Contact() {
             {/* container */}
             <div className="flex flex-col items-center gap-x-20 xl:gap-36 gap-y-10 relative lg:flex-row lg:items-start ">
                 {/* formulario */}
-                <form className="w-full md:w-[70%] max-w-md lg:w-[40%]">
-
-                    {/* nombre */}
-                    <Input
-                        placeholder="Nombre"
-                        type="text"
-                    />
-                    {/* email */}
-                    <Input
-                        placeholder="E-mail"
-                        type="email"
-                    />
-                    {/* mensaje */}
-                    <TextArea
-                        rows={5}
-                        placeholder="Mensaje"
-                    />
-                    <div className="flex lg:justify-end">
-                        <div className="w-40">
-                            <Button title="Enviar" />
-                        </div>
-                    </div>
-                </form>
+                <ContactForm />
                {/* links sociales */}
                 <div className="w-full md:w-[70%] max-w-md lg:w-60 flex flex-col gap-8 lg:gap-10">
                      {/* links sociales icono + etiqueta */}

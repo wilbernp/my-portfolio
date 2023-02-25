@@ -1,16 +1,20 @@
-interface InputProps {
-    type?: React.HTMLInputTypeAttribute;
-    placeholder: string;
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+    placeholder:string;
 }
-export default function Input({ type, placeholder }: InputProps) {
+
+
+export default function Input({ type, placeholder, name, value, onChange }: InputProps) {
 
     return (
         <div className='relative mb-8'>
             {/* input */}
             <input
-                type="text"
-                placeholder=" "
                 autoComplete="off"
+                type={type}
+                placeholder=" "
+                name={name}
+                value={value}
+                onChange={onChange}
                 className='peer h-12 w-full px-4 outline-none rounded-md bg-[#072146] border-2 border-[#d5e1f1] text-[#d5e1f1] focus:border-[#3581eb] '
             />
             {/* label */}
