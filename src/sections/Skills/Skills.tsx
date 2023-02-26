@@ -9,8 +9,8 @@ export default function Skills() {
   return (
     <div className="mt-9">
       {/* titulo */}
-      <h2 className='text-center text-blue-500 text-3xl font-bold sm:text-4xl'>HABILIDADES</h2>
-      
+      <h2 className='text-center text-secondary text-3xl font-bold sm:text-4xl'>HABILIDADES</h2>
+
       {/* habilidades blandas */}
       <ContainerSkill
         title="Habilidades Blandas"

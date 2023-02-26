@@ -7,9 +7,9 @@ import { TextArea } from '@/components/TextArea'
 import { ChangeEventType, IStateInputs } from './types';
 
 const initialInputs: IStateInputs = {
-    name: "",
-    email: "",
-    message: "",
+    fieldName: "",
+    fieldMail: "",
+    fieldMessage: "",
 }
 
 // Formulario de contacto
@@ -25,15 +25,15 @@ export default function ContactForm() {
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
-        const { name, email, message } = inputs
-        if (!name.length || !email.length || !message.length) {
+        const { fieldName, fieldMail, fieldMessage } = inputs
+        if (!fieldName.length || !fieldMail.length || !fieldMessage.length) {
             return alert("Todos los campos son requeridos")
         }
         try {
             const templateParams = {
-                name,
-                email,
-                message
+                name: fieldName,
+                email: fieldMail,
+                message: fieldMessage
             }
             const result = await emailjs.send(
                 `${import.meta.env.VITE_SERVICE_ID}`,
@@ -56,24 +56,24 @@ export default function ContactForm() {
             <Input
                 type="text"
                 placeholder="Nombre"
-                name='name'
-                value={inputs.name}
+                name='fieldName'
+                value={inputs.fieldName}
                 onChange={handleChange}
             />
             {/* email */}
             <Input
                 type="email"
                 placeholder="E-mail"
-                name='email'
-                value={inputs.email}
+                name='fieldMail'
+                value={inputs.fieldMail}
                 onChange={handleChange}
             />
             {/* mensaje */}
             <TextArea
                 placeholder="Mensaje"
                 rows={5}
-                name='message'
-                value={inputs.message}
+                name='fieldMessage'
+                value={inputs.fieldMessage}
                 onChange={handleChange}
             />
             <div className="flex lg:justify-end">
