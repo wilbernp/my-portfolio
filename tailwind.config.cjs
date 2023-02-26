@@ -12,15 +12,7 @@ module.exports = {
       'xs': '475px',
       ...defaultTheme.screens,
     },
-    colors: {
-      "main": "#022873",
-      "primary": "#035AA6",
-      "secondary": "#05C7F2",
-      "alert": "#F2C063",
-      "danger": "#F25E7A",
-      "font-color": "#d5e1f1",
-      ...colors
-    },
+
     extend: {
       spacing: {
         container: "2.5rem",
@@ -31,7 +23,16 @@ module.exports = {
       },
       backgroundImage: {
         'contact-image': "url('./src/assets/contactImage.svg')",
-      }
+      },
+
+      colors: {
+        "main": "#022873",
+        "primary": "#035AA6",
+        "secondary": "#05C7F2",
+        "alert": "#F2C063",
+        "danger": "#F25E7A",
+        "font-color": "#d5e1f1"
+      },
 
     }
   }
