@@ -5,7 +5,7 @@
 
 @layer base {
     body {
-        @apply bg-[#072146] px-container pb-container
+        @apply bg-main px-container pb-container
     }
 }
 
@@ -13,6 +13,7 @@
     .clip-path-0 {
         clip-path: circle(0 at 100% 0);
     }
+
     .clip-path-full {
         clip-path: circle(140.9% at 100% 0);
     }
