@@ -78,7 +78,11 @@ export default function ContactForm() {
             />
             <div className="flex lg:justify-end">
                 <div className="w-40">
-                    <Button type='submit' title="Enviar" />
+                    <Button
+                        type='submit'
+                        title="Enviar"
+                        className='border-secondary text-secondary'
+                    />
                 </div>
             </div>
         </form>
