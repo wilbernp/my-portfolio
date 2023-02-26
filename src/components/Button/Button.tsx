@@ -6,9 +6,9 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export default function Button({ title, secondary, type, color }: ButtonProps) {
-    const Primary = <button type={type} className={`p-2 w-full border-4 rounded-3xl border-${color || "secondary"} text-${color || "secondary"}`}>{title}</button>
+    const Primary = <button type={type} className={`p-2 w-full border-4 rounded-3xl border-alert text-alert`}>{title}</button>
 
-    const Secondary = <button type={type} className={`w-full p-2 border-4 rounded-3xl border-${color || "secondary"} bg-${color || "secondary"} text-[#072146] text-base font-medium`}>{title}</button>
+    const Secondary = <button type={type} className={`w-full p-2 border-4 rounded-3xl border-alert bg-alert text-main text-base font-medium`}>{title}</button>
 
     if (secondary) {
         return Secondary
