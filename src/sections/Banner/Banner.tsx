@@ -43,15 +43,15 @@ export default function Banner() {
           {/* boton contacto */}
           <div className='w-48 sm:w-40'>
             <Button
-              color='alert'
               title='Contacto'
+              className='border-alert text-alert'
             />
           </div>
           {/* boton descargar CV */}
           <div className='w-40 hidden sm:block'>
             <Button
               title='Descargar CV'
-              color='alert'
+              className='border-alert bg-alert'
               secondary
             />
           </div>
