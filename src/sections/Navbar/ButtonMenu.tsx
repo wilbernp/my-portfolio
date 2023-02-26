@@ -12,7 +12,7 @@ export default function ButtonMenu({ onOpen, isOpen }: ButtonMenuProps) {
     }
     if (isOpen) {
         return (
-            <InlineIcon id='hello' role="button" className='cursor-pointer text-white text-6xl md:hidden' icon={hamburgerMenu} />
+            <InlineIcon id='hello' role="button" className='cursor-pointer text-neutral-200 text-6xl md:hidden' icon={hamburgerMenu} />
         )
     }
 
@@ -21,7 +21,7 @@ export default function ButtonMenu({ onOpen, isOpen }: ButtonMenuProps) {
             onClick={handleOpen}
             className="md:hidden cursor-pointer"
         >
-            <InlineIcon id='hello' role="button" className='text-6xl text-white' icon={hamburgerMenu} />
+            <InlineIcon id='hello' className='text-6xl text-neutral-200' icon={hamburgerMenu} />
         </button>
     );
 }
